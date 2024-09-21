@@ -1,17 +1,32 @@
-<html lang="es"></html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Nosotros - Soluciones Digitales</title>
     <link rel="stylesheet" href="styles2.0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    
     <header class="navbar">
         <div class="container">
-            <img src="logo.png" alt="Logo" class="logo">
+            <img src="images/codificacion.png" alt="Logo" class="logo">
+            
+           
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            
+            
+            <label for="menu-toggle" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
             <nav>
                 <ul>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Portafolio</a></li>
                     <li><a href="#">Contacto</a></li>
@@ -20,54 +35,73 @@
         </div>
     </header>
 
+    
     <section class="nosotros-section">
         <div class="container">
-            <h2>Nosotros</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image"></div>
-                    <h3>Ramiro Bergoglio</h3>
-                    <p>Full-stack developer</p>
-                    <div class="button-group">
-                        <a href="#" class="button">Portafolio</a>
-                        <a href="#" class="button">Figma Portafolio</a>
+            <h1>Nosotros</h1>
+            <div class="team">
+                <div class="card">
+                    <div class="profile-section">
+                        <div class="profile-pic"></div>
+                        <div class="profile-info">
+                            <h2>Ramiro Bergoglio</h2>
+                            <p class="subtitle">Full-stack developer</p>
+                            <div class="buttons">
+                                <a href="#" class="btn">Portfolio</a>
+                                <a href="#" class="btn">Figma Portfolio</a>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
-
-                <div class="team-member">
-                    <div class="member-image"></div>
-                    <h3>Julián Martín Santamaría</h3>
-                    <p>Full-stack developer / Data analyst Trainee</p>
-                    <div class="button-group">
-                        <a href="#" class="button">Portafolio</a>
-                        <a href="#" class="button">Figma Portafolio</a>
+                <div class="card">
+                    <div class="profile-section">
+                        <img src="images/IMG_20220915_001158567 (2).jpg" class="profile-pic">
+                        <div class="profile-info">
+                            <h2>Julian Santamaria</h2>
+                            <p class="subtitle">Full-stack developer / Data analytics trainee</p>
+                            <div class="buttons">
+                                <a href="#" class="btn">Portfolio</a>
+                                <a href="#" class="btn">Figma Portfolio</a>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
-
-                <div class="team-member">
-                    <div class="member-image"></div>
-                    <h3>Augusto Cáceres</h3>
-                    <p>Lorem Ipsum</p>
-                    <div class="button-group">
-                        <a href="#" class="button">Portafolio</a>
-                        <a href="#" class="button">Figma Portafolio</a>
+                <div class="card">
+                    <div class="profile-section">
+                        <img src="images/mencho.jpeg" class="profile-pic">
+                        <div class="profile-info">
+                            <h2>Augusto Caceres</h2>
+                            <p class="subtitle">Full-stack developer</p>
+                            <div class="buttons">
+                                <a href="#" class="btn">Portfolio</a>
+                                <a href="#" class="btn">Figma Portfolio</a>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
-
-                <div class="team-member">
-                    <div class="member-image"></div>
-                    <h3>Nahuel Agustin Herrera</h3>
-                    <p>Lorem Ipsum</p>
-                    <div class="button-group">
-                        <a href="#" class="button">Portafolio</a>
-                        <a href="#" class="button">Figma Portafolio</a>
+                <div class="card">
+                    <div class="profile-section">
+                        <div class="profile-pic"></div>
+                        <div class="profile-info">
+                            <h2>Nahuel Herrera</h2>
+                            <p class="subtitle">Full-stack developer</p>
+                            <div class="buttons">
+                                <a href="#" class="btn">Portfolio</a>
+                                <a href="#" class="btn">Figma Portfolio</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    
     <footer>
-        <div class="container">
+        <div class="footer">
             <div class="footer-left">
                 <img src="images/LogoUADE.png" alt="UADE Logo">
                 <p>Sitio desarrollado con prácticas para la <br>materia Maestría en Diseño y Desarrollo Web.<br> 2024 - Todos los derechos reservados.</p>
