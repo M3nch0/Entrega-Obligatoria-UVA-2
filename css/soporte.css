@@ -83,7 +83,6 @@ a {
 /* Estilo para los enlaces activos */
 nav ul li a.active {
     color: #00ABE4;
-    background-color: white;
     border-radius: 5px;
 }
 
