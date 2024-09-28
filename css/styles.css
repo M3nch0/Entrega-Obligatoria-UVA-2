@@ -80,11 +80,11 @@ body {
 .service-box {
     width: 30%;
     max-width: 600px;
-    background-color: #E9F1FA; 
+    background-color: #E9F1FA;
     color: #1E375A;
     padding: 20px;
-    border-radius: 8px; /* Añade esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     text-align: center;
 }
@@ -99,11 +99,11 @@ body {
 .projects-box {
     width: auto;
     max-width: 600px;
-    background-color: #E9F1FA; 
+    background-color: #E9F1FA;
     color: #1E375A;
     padding: 20px;
-    border-radius: 8px; /* Añade esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     text-align: center;
 
@@ -111,12 +111,12 @@ body {
 
 .projects-box img {
     margin: 15px;
-    background-color: #E9F1FA; 
+    background-color: #E9F1FA;
     color: #1E375A;
-    padding: 10px; /* Espacio alrededor del logo */
-    border-radius: 8px; /* Bordes redondeados */
-    width: 350px; /* Controlar el tamaño de las imágenes */
-    height: auto; /* Mantener la proporción */
+    padding: 10px;
+    border-radius: 8px;
+    width: 350px;
+    height: auto;
 }
 
 .projects-extrabox {
@@ -124,32 +124,32 @@ body {
     background-color: #E9F1FA;
     color: #1E375A;
     padding: 20px;
-    border-radius: 8px; /* Añade esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     text-align: center;
 }
 
 
-    /* Tecnologías y Logos */
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 40px;
-    }
-    
-    .logo-container img {
-        margin: 15px;
-        background-color: #E9F1FA;
-        padding: 10px; /* Espacio alrededor del logo */
-        border-radius: 8px; /* Bordes redondeados */
-        width: 100px; /* Controlar el tamaño de los logos */
-        height: auto; /* Mantener la proporción */
-    }
+/* Tecnologías y Logos */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
 
-    
+.logo-container img {
+    margin: 15px;
+    background-color: #E9F1FA;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    height: auto;
+}
+
+
 .nosotros-section {
     padding: 60px 0;
     text-align: center;
@@ -359,20 +359,19 @@ footer {
 
 @media (max-width: 400px) {
     .hamburger-menu {
-        display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
+        display: block;
     }
 
     nav ul {
-        display: flex; /* Mostrar el menú cuando se activa el checkbox */
+        display: flex;
         flex-direction: column;
     }
 
     nav {
-        display: none; /* Ocultar el menú horizontal en pantallas pequeñas */
+        display: none;
     }
 
-    /* Cuando el menú hamburguesa está activo, mostrar el menú */
-    .menu-toggle:checked ~ nav {
+    .menu-toggle:checked~nav {
         display: flex;
         flex-direction: column;
         background-color: #E9F1FA;
@@ -385,12 +384,19 @@ footer {
     }
 
 
-    .services-container, .soporte-icons, .projects-container, .team {
+    .services-container,
+    .soporte-icons,
+    .projects-container,
+    .team {
         flex-direction: column;
         align-items: center;
     }
 
-    .service-box, .soporte-box, .projects-box, .projects-box img, .projects-extrabox {
+    .service-box,
+    .soporte-box,
+    .projects-box,
+    .projects-box img,
+    .projects-extrabox {
         width: 80%;
         max-width: 100%;
         margin-bottom: 20px;
