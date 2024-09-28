@@ -73,6 +73,7 @@ a {
     font-weight: bold;
     padding: 10px;
     transition: color 0.3s;
+    font-size: 22px;
 }
 
 .navbar nav ul li a:hover {
