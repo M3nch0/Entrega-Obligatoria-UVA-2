@@ -1,0 +1,419 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 120px; /* Ajusta para evitar que el contenido sea tapado por el menú fijo */
+}
+
+.container {
+    max-width: 1200px; /* Limita el ancho máximo a 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #1E375A;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #E9F1FA;
+}
+
+/* Estilos de Navegación (Header) */
+.navbar {
+    background-color: #E9F1FA;
+    color: #00ABE4;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    width: 120px;
+}
+
+/* Menú visible en pantallas grandes */
+.navbar nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar nav ul li a {
+    color: #1E375A;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #00ABE4;
+}
+
+/* Estilo para los enlaces activos */
+nav ul li a.active {
+    color: #00ABE4;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Menú hamburguesa */
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 30px;  /* Ancho de las líneas del menú */
+    height: 3px;  /* Altura de cada línea */
+    background-color: #ffffff;  /* Color de las líneas */
+    margin: 6px 0;  /* Separación entre las líneas */
+    transition: all 0.3s;  /* Animación de transición para la transformación */
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    margin-top: 30px;
+}
+
+main .SubtextoPrincipal {
+    background-color: #E9F1FA;
+    text-align: center;
+    width: 80%;
+    padding: 30px;
+    position: relative;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 100px;
+}
+
+main .tiposoporte {
+    background-color: #E9F1FA;
+    margin-top: 25px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    position: relative;
+    transform: translateY(-10%); /* Desplaza el contenido hacia el centro */
+}
+
+main .tiposoporte .listasoporte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center; 
+}
+
+
+main .tiposoporte ul li {
+    padding: 40px;
+    border-radius: 50%;
+    list-style: none;
+}
+
+main .tiposoporte ul li img {
+    width: 32vh;
+    height: 30vh;
+    border-radius: 50%;
+    transition: 1s;
+    
+}
+
+.hover-effect {
+    
+    position: relative;
+    display: inline-block;
+}
+
+.hover-effect img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.hover-effect .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto */
+    font-size: 1.5em; /* Tamaño del texto */
+    text-align: center;
+    opacity: 0; /* Hace que el texto sea invisible inicialmente */
+    transition: opacity 0.3s; /* Transición suave para el texto */
+}
+
+.hover-effect:hover .hover-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.hover-effect:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+    transition: background 0.3s; /* Transición suave para el fondo */
+    opacity: 0; /* Esconde la capa de fondo */
+    border-radius: 50%;
+}
+
+.hover-effect:hover:before {
+    opacity: 1; /* Muestra la capa de fondo al pasar el cursor */
+}
+
+main .tiposoporte ul li img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+main .mantenimientos {
+    width: 80%;
+    margin-top: 150px;
+    font-size: 20px;
+    position: relative;
+    bottom: 150px;
+}
+
+
+main .mantenimientos .contenedor{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    justify-content: center;
+    
+}
+
+main .mantenimientos .contenedor img{
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 30vh;
+    height: 30vh;
+    background-color: gainsboro;
+    padding: 5px;
+   
+}
+
+#soporte1 {
+    margin-top: 50px;
+}
+
+#soporte2 {
+    margin-top: 50px;
+}
+
+#soporte3 {
+    margin-top: 50px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.logo-container img {
+    margin: 15px;
+    background-color: #E9F1FA;
+    padding: 10px; /* Espacio alrededor del logo */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 100px; /* Controlar el tamaño de los logos */
+    height: auto; /* Mantener la proporción */
+}
+
+footer {
+    background-color: #E9F1FA;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer-right img.uade-logo {
+    height: 50px;
+
+    vertical-align: middle;
+}
+
+/* Ajustes Responsive */
+@media (min-width: 401px) {
+    nav ul {
+        display: flex; /* Mostrar el menú horizontalmente en pantallas grandes */
+    }
+
+    .hamburger-menu {
+        display: none; /* Ocultar el menú hamburguesa en pantallas grandes */
+    }
+}
+
+@media (max-width: 400px) {
+    
+
+    .hamburger-menu {
+        display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
+    }
+
+    nav ul {
+        display: flex; /* Mostrar el menú cuando se activa el checkbox */
+        flex-direction: column;
+    }
+
+    nav {
+        display: none; /* Ocultar el menú horizontal en pantallas pequeñas */
+    }
+
+    /* Cuando el menú hamburguesa está activo, mostrar el menú */
+    .menu-toggle:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #E9F1FA;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        z-index: 1;
+    }
+
+    main .SubtextoPrincipal{
+        margin-bottom: 100px;
+        margin-top: 0;
+    }
+
+    main .SubtextoPrincipal p{
+        font-size: 15px;
+        position: relative;
+        
+    }
+
+    main .tiposoporte {
+        width: 90%;
+        height: 30vh;
+        justify-content: center;
+        position: relative;
+        bottom: 50px;
+    }
+
+    main .tiposoporte .listasoporte {
+        justify-content: center;
+        
+    }
+
+    main .tiposoporte ul li {
+        padding: 0px 20px 0px 20px ;
+        
+    }
+
+
+    main .tiposoporte .listasoporte li img{
+        width: 11vh;
+        height: 11vh;
+        
+    }
+
+    main .mantenimientos  {
+        margin: 0;
+        position: relative;
+        bottom: 80px;
+    }
+
+
+    main .mantenimientos .contenedor {
+        flex-direction: column;
+        
+    }
+
+    main .mantenimientos .contenedor p {
+        font-size: 14px;
+        margin-top: 3vh;
+    }
+
+    main .mantenimientos .contenedor img {
+        margin: 0;
+        width: 20vh;
+        height: 20vh;
+    }
+
+
+   
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left img.uade-logo {
+        margin-right: 0;
+        margin-top: 10px;
+        
+    }
+
+    .footer-left p {
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
