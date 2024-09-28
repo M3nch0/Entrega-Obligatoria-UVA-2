@@ -21,6 +21,10 @@ p {
     margin-bottom: 30px;
 }
 
+h1 {
+    margin: 3vw;
+}
+
 h2 {
     font-size: 2em;
     color: #1E375A;
@@ -123,6 +127,10 @@ h2 {
         transition: background-color 0.3s ease;
         margin-bottom: 1vw;
         width: 100%;
+    }
+
+    h1 {
+        margin-bottom: 8vw;
     }
 }
 
