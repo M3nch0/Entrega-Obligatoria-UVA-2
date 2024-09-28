@@ -4,51 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Soluciones Digitales</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portafolio - Techforge</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header class="navbar">
         <div class="container">
-            <img src="images/codificacion.png" alt="Logo" class="logo">
-
+            <a href="index.html">
+                <img src="images/techforge-logo.jpg" alt="Logo Techforge" class="logo">
+            </a>
 
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-
             <label for="menu-toggle" class="hamburger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
-
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="Nosotros.html">Nosotros</a></li>
-                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="Servicios.html" class="active">Servicios</a></li>
                     <li><a href="Portafolio.html">Portafolio</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Soporte.html">Soporte</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <section class="services">
+        <div class="container">
+            <h1>Nuestros Servicios</h1>
 
+            <div class="service-box">
+                <h3>Diseño Web Personalizado</h3>
+                <p>Ofrecemos diseño de sitios web a medida para tu empresa, alineados a tus necesidades y objetivos.</p>
+                <img src="images/web-design.jpg" alt="Diseño Web">
+            </div>
 
+            <div class="service-box">
+                <h3>Desarrollo de Aplicaciones</h3>
+                <p>Desarrollamos aplicaciones web y móviles utilizando las tecnologías más avanzadas.</p>
+                <img src="images/app-development.jpg" alt="Desarrollo de Aplicaciones">
+            </div>
+
+            <div class="service-box">
+                <h3>Consultoría Tecnológica</h3>
+                <p>Nuestros expertos te asesorarán para implementar las mejores soluciones tecnológicas en tu negocio.</p>
+                <img src="images/consulting.jpg" alt="Consultoría Tecnológica">
+            </div>
+
+            <h2>Nuestros Valores</h2>
+            <p>Somos responsables con nuestros clientes.</p>
+            <p>Creemos en la innovación y la calidad en cada proyecto.</p>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer">
+        <div class="footer-content">
             <div class="footer-left">
-                <img src="images/LogoUADE.png" alt="UADE Logo">
-                <p>Sitio desarrollado con prácticas para la <br>materia Maestría en Diseño y Desarrollo Web.<br> 2024 -
-                    Todos los derechos reservados.</p>
+                <p>Materia: Diseño y Desarrollo Web Curso: 492766 Grupo: 13<br>
+                Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
             </div>
-            <a href="https://github.com" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <div class="footer-right">
+                <img src="images/uade-logo.png" alt="Logo UADE" class="uade-logo">
+            </div>
         </div>
     </footer>
 </body>
