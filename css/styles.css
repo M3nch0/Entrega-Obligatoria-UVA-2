@@ -14,6 +14,10 @@ body {
     height: 100%;
 }
 
+.navbar nav ul li a.active {
+    color: #00abe4;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -66,7 +70,7 @@ body {
 }
 
 .navbar nav ul li a:hover {
-    color: #0056b3;
+    color: #0099ff;
 }
 
 
@@ -148,8 +152,6 @@ body {
     width: 100px;
     height: auto;
 }
-
-
 
 
 
@@ -282,6 +284,9 @@ footer {
     margin-right: 15px;
     vertical-align: middle;
 }
+
+
+
 
 @media (max-width: 400px) {
     .hamburger-menu {
