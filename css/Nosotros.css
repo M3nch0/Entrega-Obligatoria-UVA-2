@@ -21,6 +21,10 @@ p {
     margin-bottom: 30px;
 }
 
+h1 {
+    margin: 3vw;
+}
+
 h2 {
     font-size: 2em;
     color: #1E375A;
@@ -28,178 +32,106 @@ h2 {
 }
 
 
-/* Inicio */
+/* Nosotros */
 
-
-.page-title {
-    text-align: center
-}
-
-.page-title h1 {
-    font-size: 3rem;
-    color: #1E375A;
-    text-align: center;
-    margin-top: 3vw;
-}
-
-/* Hero */
-
-.hero-container {
+.card-container {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 8vw;
-    margin-top: 5vw;
-
-
-}
-
-.hero-content {
-    margin-right: 6vw;
-    margin-left: 6vw;
-    flex: 1;
-
-}
-
-.cta-btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 6vw;
-    margin-top: 4vw;
-}
-
-.cta-btn {
-    display: inline-block;
-    padding: 15px 160px;
-    background-color: #00abe4;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
+    background-color: #e9f1fa;
+    padding: 2vw;
     border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    gap: 5vw;
 }
 
-.cta-btn:hover {
-    background-color: #0056b3;
+.card {
+    display: flex;
+    width: 12vw;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
 }
 
 
-.hero-image {
-    max-width: 80%;
-    border-radius: 10px;
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #777;
 }
 
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1vw;
+    width: 7vw
+}
+
+.btn:hover {
+    background-color: #008ecc;
+}
 
 
 @media (max-width: 700px) {
-    .page-title {
-        margin: 5vw 0 5vw 0;
-    }
-
-    .hero-container {
+    .card-container {
         display: flex;
+        background-color: #e9f1fa;
         flex-direction: column;
         align-items: center;
-        margin: 2vw;
+        gap: 0;
+        margin-bottom: 5vw;
+
     }
 
-    .hero {
-        flex-direction: column;
-        padding: 60px 0 40px;
-    }
-
-    .hero-image-container {
-        margin-bottom: 20px;
-    }
-
-    .hero-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 80%;
-    }
-
-    .hero-content {
-        max-width: 80%;
-        text-align: center;
-    }
-
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .cta-btn {
-        font-size: 1rem;
-        width: 100%;
-        margin: 0;
-        padding: 15px 70px;
-    }
-
-    .cta-btn-container {
-        margin-right: 0;
-    }
-
-    .cta-btn:hover {
-        background-color: #0056b3;
-    }
-
-
-
-}
-
-@media (min-width: 701px) and (max-width: 1024px) {
-
-    .hero-container {
+    .card {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2vw;
-    }
-
-    .hero-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%;
-    }
-
-
-    .hero-content {
-        margin-top: 10vw;
-    }
-
-    .cta-btn {
-        font-size: 1rem;
         width: 100%;
-        margin: 0;
-        display: inline-block;
-        padding: 15px 70px;
-        background-color: #00abe4;
-        color: white;
-        font-weight: bold;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-    }
-
-    .cta-btn-container {
-        display: flex;
         justify-content: center;
-        align-items: center;
+        margin-top: 5vw;
     }
 
-    .cta-btn:hover {
-        background-color: #0056b3;
+    .btn {
+        background-color: #00aaff;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 12px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 1vw;
+        width: 100%;
+    }
+
+    h1 {
+        margin-bottom: 8vw;
     }
 }
+
+@media (min-width: 701px) and (max-width: 1024px) {}
