@@ -21,8 +21,6 @@ body {
     line-height: 1.6;
 }
 
-
-
 p {
     font-size: 1.5rem;
     color: #4a4a4a;
@@ -117,18 +115,17 @@ h2 {
 
 }
 
-
-
 .cta-btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 6vw;
+    margin-top: 4vw;
 }
 
 .cta-btn {
     display: inline-block;
-    padding: 15px 70px;
+    padding: 15px 160px;
     background-color: #00abe4;
     color: white;
     font-size: 1.2rem;
@@ -144,14 +141,12 @@ h2 {
 
 
 .hero-image {
-    max-width: 45%;
-    flex: 1;
-}
-
-.hero-image img {
-    width: 80%;
+    max-width: 80%;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
 .hamburger-menu {
@@ -247,8 +242,10 @@ footer .github-link:hover {
 }
 
 @media (max-width: 700px) {
-    .navbar {
-        padding: 10px 0;
+    .navbar {}
+
+    .page-title {
+        margin: 5vw 0 5vw 0;
     }
 
     .navbar .container {
@@ -313,26 +310,32 @@ footer .github-link:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 8vw;
+        margin: 2vw;
     }
 
-    /* .hero {
+    .hero {
         flex-direction: column;
         padding: 60px 0 40px;
     }
 
-    
-    .hero-image {
-        max-width: 100%;
+
+    .hero-image-container {
         margin-bottom: 20px;
     }
 
+    .hero-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+
     .hero-content {
-        max-width: 100%;
+        max-width: 80%;
         text-align: center;
     }
 
-    .hero-content h1 {
+    .hero-content h2 {
         font-size: 1.8rem;
     }
 
@@ -342,10 +345,21 @@ footer .github-link:hover {
 
     .cta-btn {
         font-size: 1rem;
-        padding: 10px 20px;
-    } */
+        width: 100%;
+        margin: 0;
+        padding: 15px 70px;
+    }
 
-    footer {
+    .cta-btn-container {
+        margin-right: 0;
+    }
+
+    .cta-btn:hover {
+        background-color: #0056b3;
+    }
+
+
+    */ footer {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -374,4 +388,52 @@ footer .github-link:hover {
     footer .github-link {
         font-size: 20px;
     }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vw;
+    }
+
+    .hero-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+
+    .hero-content {
+        margin-top: 10vw;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+        display: inline-block;
+        padding: 15px 70px;
+        background-color: #00abe4;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .cta-btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-btn:hover {
+        background-color: #0056b3;
+    }
+
+
 }
