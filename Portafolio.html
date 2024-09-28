@@ -4,51 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Soluciones Digitales</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portafolio - Techforge</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header class="navbar">
         <div class="container">
-            <img src="images/codificacion.png" alt="Logo" class="logo">
-
+            <a href="index.html">
+                <img src="images/techforge-logo.jpg" alt="Logo Techforge" class="logo">
+            </a>
 
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-
             <label for="menu-toggle" class="hamburger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
-
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="Nosotros.html">Nosotros</a></li>
                     <li><a href="Servicios.html">Servicios</a></li>
-                    <li><a href="Portafolio.html">Portafolio</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Portafolio.html" class="active">Portafolio</a></li>
+                    <li><a href="Soporte.html">Soporte</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
 
+    <main class="projects" id="projects">
+        <h2>Portafolio</h2>
+        <div class="projects-container">
+            <div class="projects-extrabox">
+                <p>Este portafolio muestra algunos de los proyectos en los que Techforge ha trabajado, incluyendo
+                    desarrollo web, aplicaciones móviles y proyectos en construcción. Cada proyecto refleja nuestro
+                    compromiso con la calidad y la innovación tecnológica.</p>
+            </div>
+        </div>
 
+        <div class="projects-container">
+            <div class="projects-box">
+                <a href="index.html" target="_blank">
+                    <img src="images/project1.jpg" alt="Proyecto 1">
+                </a>
+                <h3>Techforge</h3>
+                <p>Para la página de Techforge utilizamos HTML y CSS para crear un diseño responsive con un header, menú
+                    hamburguesa y footer. Usamos media queries para asegurar que el sitio se adapte a diferentes tamaños
+                    de pantalla.</a></p>
+            </div>
+
+            <div class="projects-box">
+                <img src="images/under_construction.jpg" alt="En construcción">
+                <h3>Proyecto 2</h3>
+                <p>Este Proyecto se encuentra en construccion, proximamente subiremos avances.</p>
+            </div>
+        </div>
+
+        <h2>Tecnologías Utilizadas</h2>
+        <div class="projects-container">
+            <div class="projects-extrabox">
+                <div class="logo-container">
+                    <img src="images/html.png" alt="HTML">
+                    <img src="images/css.png" alt="CSS">
+                    <img src="images/js.png" alt="JavaScript">
+                    <img src="images/react.png" alt="React">
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <div class="footer">
+        <div class="footer-content">
             <div class="footer-left">
-                <img src="images/LogoUADE.png" alt="UADE Logo">
-                <p>Sitio desarrollado con prácticas para la <br>materia Maestría en Diseño y Desarrollo Web.<br> 2024 -
-                    Todos los derechos reservados.</p>
+                <p>Materia: Diseño y Desarrollo Web Curso: 492766 Grupo: 13<br>
+                    Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
             </div>
-            <a href="https://github.com" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <div class="footer-right">
+                <img src="images/uade-logo.png" alt="Logo UADE" class="uade-logo">
+            </div>
         </div>
     </footer>
 </body>
