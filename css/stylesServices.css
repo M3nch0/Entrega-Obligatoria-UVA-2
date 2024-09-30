@@ -51,7 +51,7 @@ a {
 
 /* Estilos de Navegación (Header) */
 .navbar {
-    background-color: #20395c;
+    background-color: #E9F1FA;
     color: white;
     padding: 10px 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -174,7 +174,7 @@ section .services-container{
 
 /* Footer */
 footer {
-    background-color: #20395c;
+    background-color: #E9F1FA;
     color: white;
     padding: 20px 0;
     text-align: center;
